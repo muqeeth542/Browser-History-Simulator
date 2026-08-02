@@ -1,27 +1,27 @@
-# ?? Browser History Simulator — C++ DSA Project
+# Browser History Simulator - C++ DSA Project
 
-> A console-based browser history simulator built in **C++**, demonstrating the power of **Doubly Linked Lists** to replicate back/forward navigation — just like a real web browser!
-
----
-
-## ?? Table of Contents
-
-- [Overview](#-overview)
-- [Core Concept — Doubly Linked List](#-core-concept--doubly-linked-list)
-- [Data Structure Design](#-data-structure-design)
-- [Class & Method Breakdown](#-class--method-breakdown)
-- [How It Works — Step by Step](#-how-it-works--step-by-step)
-- [Menu & User Interaction](#-menu--user-interaction)
-- [Sample Output](#-sample-output)
-- [Key DSA Concepts Used](#-key-dsa-concepts-used)
-- [Time & Space Complexity](#-time--space-complexity)
-- [How to Compile & Run](#-how-to-compile--run)
-- [Project Structure](#-project-structure)
-- [Learning Outcomes](#-learning-outcomes)
+> A console-based browser history simulator built in **C++**, demonstrating the power of **Doubly Linked Lists** to replicate back/forward navigation - just like a real web browser!
 
 ---
 
-## ?? Overview
+## Table of Contents
+
+- [Overview](#overview)
+- [Core Concept - Doubly Linked List](#core-concept---doubly-linked-list)
+- [Data Structure Design](#data-structure-design)
+- [Class & Method Breakdown](#class--method-breakdown)
+- [How It Works - Step by Step](#how-it-works---step-by-step)
+- [Menu & User Interaction](#menu--user-interaction)
+- [Sample Output](#sample-output)
+- [Key DSA Concepts Used](#key-dsa-concepts-used)
+- [Time & Space Complexity](#time--space-complexity)
+- [How to Compile & Run](#how-to-compile--run)
+- [Project Structure](#project-structure)
+- [Learning Outcomes](#learning-outcomes)
+
+---
+
+## Overview
 
 This project simulates the **browser navigation history** feature (Back / Forward / Visit) using a **Doubly Linked List** in C++.
 
@@ -29,18 +29,18 @@ When you browse the internet:
 - Every new page you visit gets added to a history chain.
 - You can go **back** to the previous page.
 - You can go **forward** to the next page.
-- If you visit a new URL while in the middle of history, all **forward history is cleared** — exactly like real browsers do.
+- If you visit a new URL while in the middle of history, all **forward history is cleared** - exactly like real browsers do.
 
 This project replicates all of the above behaviors from scratch using fundamental DSA concepts.
 
 ---
 
-## ?? Core Concept — Doubly Linked List
+## Core Concept - Doubly Linked List
 
 A **Doubly Linked List** is a linear data structure where each node holds:
-- **Data** — the URL of a page
-- **`next` pointer** — points to the next (forward) page
-- **`prev` pointer** — points to the previous (back) page
+- **Data** - the URL of a page
+- **`next` pointer** - points to the next (forward) page
+- **`prev` pointer** - points to the previous (back) page
 
 ```
 NULL <- [Google.com] <-> [Youtube.com] <-> [GitHub.com] -> NULL
@@ -52,7 +52,7 @@ This bi-directional linking is what makes **back and forward navigation** possib
 
 ---
 
-## ??? Data Structure Design
+## Data Structure Design
 
 ### `struct node`
 
@@ -74,7 +74,7 @@ Each `node` represents **one webpage** in the browser history. The constructor i
 
 ---
 
-## ?? Class & Method Breakdown
+## Class & Method Breakdown
 
 ### `class BrowserHistory`
 
@@ -88,7 +88,7 @@ The entire browser simulation lives inside this class. It has a single private m
 
 ### Methods
 
-#### 1. `BrowserHistory(string homepage)` — Constructor
+#### 1. `BrowserHistory(string homepage)` - Constructor
 
 ```cpp
 BrowserHistory(string homepage) {
@@ -103,7 +103,7 @@ BrowserHistory(string homepage) {
 
 ---
 
-#### 2. `void visit(string url)` — Visit a New Page
+#### 2. `void visit(string url)` - Visit a New Page
 
 ```cpp
 void visit(string url) {
@@ -150,7 +150,7 @@ After visit("Twitter.com"):
 
 ---
 
-#### 3. `void back()` — Go to Previous Page
+#### 3. `void back()` - Go to Previous Page
 
 ```cpp
 void back() {
@@ -169,7 +169,7 @@ void back() {
 
 ---
 
-#### 4. `void forward()` — Go to Next Page
+#### 4. `void forward()` - Go to Next Page
 
 ```cpp
 void forward() {
@@ -188,7 +188,7 @@ void forward() {
 
 ---
 
-#### 5. `void viewpages()` — Display All Pages
+#### 5. `void viewpages()` - Display All Pages
 
 ```cpp
 void viewpages() {
@@ -223,7 +223,7 @@ void viewpages() {
 
 ---
 
-## How It Works — Step by Step
+## How It Works - Step by Step
 
 ```
 1. Browser launches -> CurrentPage = Google.com
@@ -345,7 +345,7 @@ exited successfully
 
 | Resource | Space Complexity |
 |---|---|
-| History storage | O(n) — one node per page visited |
+| History storage | O(n) - one node per page visited |
 | Pointers | O(1) per node (constant overhead) |
 
 ---
@@ -380,10 +380,9 @@ Browser_History.exe
 
 ```
 Project's/
-|
-|-- Browser_History.cpp   # Main source file
-|-- Browser_History.exe   # Compiled Windows executable
-+-- README.md             # This documentation file
+â”œâ”€â”€ Browser_History.cpp   # Main source file
+â”œâ”€â”€ Browser_History.exe   # Compiled Windows executable
+â””â”€â”€ README.md             # This documentation file
 ```
 
 ---
@@ -403,7 +402,7 @@ By studying and running this project, you will understand:
 
 ## Author
 
-**LPU Summer Training — DSA Project**  
+**LPU Summer Training - DSA Project**  
 *Data Structures & Algorithms with C++*
 
 ---
